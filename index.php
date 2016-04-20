@@ -31,7 +31,7 @@ for logging in.  Here are some things you can do:
 <li>Login locally using <a href="login.php">login.php</a></li>
 <li>Visit a file that checks for local login and is completely unaware of LTI
 <a href="unaware.php">unaware.php</a></li>
-<li>Visit a file that expects LTI to be provisions and uses the LTI info to send a grade
+<li>Visit a file that expects LTI to be provisioned and uses the LTI info to send a grade
 <a href="grade.php">grade.php</a></li>
 <li>Send an LTI launch to this file (index.php)</li>
 <li>Send an LTI launch to <a href="launch.php" target="_blank">launch.php</a> to effect a local login</li>
