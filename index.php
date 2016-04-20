@@ -25,10 +25,14 @@ $LAUNCH = LTIX::session_start();
 This is a sample Standalone application that uses Tsugi to add support
 for logging in.  Here are some things you can do:
 <ul>
-<li>Visit this file to check the session information</li>
-<li>Login locally using <a href="login.php">login.php</a></li>
+<li>Visit this file (index.php) to check the session information and see this cool list</li>
 <li>Logout completely (LTI and locally) using <a href="logout.php">logout.php</a>
 </li>
+<li>Login locally using <a href="login.php">login.php</a></li>
+<li>Visit a file that checks for local login and is completely unaware of LTI
+<a href="unaware.php">unaware.php</a></li>
+<li>Visit a file that expects LTI to be provisions and uses the LTI info to send a grade
+<a href="grade.php">grade.php</a></li>
 <li>Send an LTI launch to this file (index.php)</li>
 <li>Send an LTI launch to <a href="launch.php" target="_blank">launch.php</a> to effect a local login</li>
 <?php if ( isset($LAUNCH->user) && !isset($_SESSION['user_email']) ) { ?>
