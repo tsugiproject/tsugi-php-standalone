@@ -2,7 +2,7 @@
 
 // This is an example of some code that just checks 
 // the "old logged in" stuff and is completely unaware
-// of LTI
+// of LTI - note the use of session_start()
 
 session_start();
 ?>
@@ -24,5 +24,6 @@ if ( isset($_SESSION['user_email']) ) {
 </p>
 <p>
 <a href="index.php">Back to the index.php</a>
+</p>
 </body>
 </html>
