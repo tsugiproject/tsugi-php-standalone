@@ -35,7 +35,7 @@ Once that is installed, you can download this software:
     https://github.com/csev/tsugi-php-standalone
 
 The software comes with a `config.php` that assumes it this program is
-installed in the same htdocs folder as the Tsug Console.  This is a 
+installed in the same htdocs folder as the Tsugi Console.  This is a 
 quick way to get this program up and running for testing and exploration.
 A key element of the configuration is to include this line as part
 of the configuration to indicate to Tsugi that we are using
