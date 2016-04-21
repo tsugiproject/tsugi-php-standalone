@@ -6,7 +6,7 @@ There are two ways to use the Tsugi library/framework:
 
 * You can use Tsugi like a library and add it to a few places in 
 an existing application.  This repository contains 
-a sample code showing how to use Tsugi as a library in an 
+sample code showing how to use Tsugi as a library in an 
 existing application.
 
 * You can also build a "Tsugi Module" from scratch following all of the
