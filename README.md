@@ -91,18 +91,18 @@ Limitations of Cookie-Based Sessions
 
 In standalone model, we will use cookies to manage the sessions.   Using cookies
 limits the ability to embed the application in an iframe across two domains.
-It also means that a single PHPSESSID value will exist for all non-icognito
+It also means that a single PHPSESSID value will exist for all non-incognito
 windows and so if you do a launch on one tab as one user from a course
 and then do another launch in a different tab as a different user from a different
 course, the login settings will be changed in the first tab since they are 
-sharing a PHP session.
+sharing a PHP session across tabs.
 
 This also means that these applications should be launched from the LMS in 
-a new window and not hosted in an iframe.
+a new window and not embedded in an iframe.
 
 The ablility to have multiple simultaneous sessions and work seamlessly in an 
 iframe is one of the reasons that a lot of effort goes into using non-cookie
-sessions in normal embeddable Tsugi Modules.  But since there are so many
+sessions in Tsugi Modules.  But since there are so many
 existing applications that need an LTI integreation that cannot be rewritten,
 we accept these limitations in our Tsugi standalone approach.
 
@@ -159,7 +159,7 @@ or a copy of `config.php`
 from a Tsugi install and place the file in this folder.
 
 Then you will need to configure the database connection, etc for this
-appication by editing `config.php`.  
+application by editing `config.php`.  
 
 A key element of the configuration is to include this line as part
 of the configuration to indicate to the Tsugi run-time that we 
