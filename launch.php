@@ -18,6 +18,6 @@ if ( !isset($LAUNCH->user->email) ) {
 }
 
 // Log the user in locally - note local session already started
-$_SESSION["user_email"] = $_POST["user_email"];
+$_SESSION["user_email"] = $LAUNCH->user->email;
 $_SESSION["success"] = "Logged in.";
 header( 'Location: index.php' ) ;
