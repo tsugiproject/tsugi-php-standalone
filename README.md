@@ -2,6 +2,8 @@
 TSUGI PHP Standalone Sample
 ===========================
 
+This is a component of the [Tsugi PHP Project](https://github.com/csev/tsugi).
+
 There are two ways to use the Tsugi library/framework:
 
 * You can use Tsugi like a library and add it to a few places in 
