@@ -2,40 +2,38 @@
 TSUGI PHP Standalone Sample
 ===========================
 
-This is a component of the [Tsugi PHP Project](https://github.com/csev/tsugi).
+This is a component of the [Tsugi PHP Project](https://github.com/tsugiproject/tsugi).
 
 There are two ways to use the Tsugi library/framework:
 
 * You can use Tsugi like a library and add it to a few places in 
-an existing application.  This repository contains 
+an application.  This repository contains 
 sample code showing how to use Tsugi as a library in an 
-existing application.
+otherwise standalone application.
 
 * You can also build a "Tsugi Module" from scratch following all of the
 Tsugi style guidance, using the Tsugi browser environment, and
 making full use of the Tsugi framework.
 We also have starting code for
-[Bulding a Tsugi Module](https://github.com/csev/tsugi-php-module)
+[Bulding a Tsugi Module](https://github.com/tsugiproject/tsugi-php-module)
 
 Both of these approaches depend on the
-[Tsugi Devloper/Admin Console](https://github.com/csev/tsugi)
+[Tsugi Devloper/Admin Console](https://github.com/tsugiproject/tsugi)
 for database configuration, setup, developer test harness,
-CASA support, Content Item Support, etc.
+Deep Linking support, etc.
 
 Setup/Configuration
 -------------------
 
-You need to download and install the 
-[Tsugi Developer/Administrator Console](https://github.com/csev/tsugi)
-to be able to setup database tables, test your software, and configure 
-your keys.   Once things are setup - end-users or teachers do not need 
-access to the Tsugi application unless yuo want to let them apply for 
-keys.
+To set this application up, check it out into a folder on your "htdocs"
+folder. Then also checkout the 
+[Tsugi Developer/Administrator Console](https://github.com/tsugiproject/tsugi)
+as a sub folder - we will use `tsugi` as that subfolder in this example
+but it could be anywhere on the same server.  
 
-Once that is installed, you can download this software:
-
-    https://github.com/csev/tsugi-php-standalone
-
+    cd ... htdocs/tsugi-php-standalone
+    git clone https://github.com/tsugiproject/tsugi
+    
 The software comes with a `config.php` that assumes it this program is
 installed in the same htdocs folder as the Tsugi Console.  This is a 
 quick way to get this program up and running for testing and exploration.
@@ -64,7 +62,7 @@ How Tsugi Uses Session
 
 if you look at `index.php`, you will see these three lines:
 
-    require_once "config.php";
+    require_once "tsugi/config.php";
     use \Tsugi\Core\LTIX;
 
     $LAUNCH = LTIX::session_start();
@@ -105,7 +103,7 @@ a new window and not embedded in an iframe.
 The ablility to have multiple simultaneous sessions and work seamlessly in an 
 iframe is one of the reasons that a lot of effort goes into using non-cookie
 sessions in Tsugi Modules.  But since there are so many
-existing applications that need an LTI integreation that cannot be rewritten,
+existing applications that need an LTI integration that cannot be rewritten,
 we accept these limitations in our Tsugi standalone approach.
 
 Virtually all of the older LTI integrations based on `lti_util.php` or a similar
@@ -139,7 +137,7 @@ I just do this in the folder:
     curl -O https://getcomposer.org/composer.phar
 
 Get a copy of the latest `composer.json` file from the 
-[Tsugi repository](https://github.com/csev/tsugi)
+[Tsugi repository](https://github.com/tsugiproject/tsugi)
 or a recent Tsugi installation and copy it into this folder.
 
 To install the dependencies into the `vendor` area, do:
@@ -156,7 +154,7 @@ any repo.
 
 For advanced configuation, you need to retrieve a copy of 
 `config-dist.php` from the 
-[Tsugi repository](https://github.com/csev/tsugi)
+[Tsugi repository](https://github.com/tsugiproject/tsugi)
 or a copy of `config.php`
 from a Tsugi install and place the file in this folder.
 
@@ -192,7 +190,7 @@ Upgrading the Library Code (Advanced Configuration)
 
 From time to time the library code in
 
-    https://github.com/csev/tsugi-php
+    https://github.com/tsugiproject/tsugi-php
 
 Will be upgraded and pulled into Packagist:
 
